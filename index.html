@@ -1,0 +1,450 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <style>
+        .hero-img {
+    text-align: right; /* Align the image to the right */
+    padding: 20px; /* Add some padding around the image */
+}
+
+.hero-img img {
+    border-radius: 10px; /* Add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    .hero-caption {
+    color: black;
+}
+    /* Adjust the padding/margin for the hero section */
+.slider-area,
+.slider-active,
+.single-slider {
+    padding-top: 0 !important; /* Remove top padding */
+    margin-top: 0 !important;  /* Remove top margin */
+}
+
+/* Ensure the container aligns to the top */
+.single-slider .container {
+    padding-top: 0 !important;
+}
+
+/* Adjust the hero-caption to align at the top */
+.hero-caption {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+    /* Gallery Section Styles */
+.gallery-area {
+    background-color: #f9f9f9; /* Light background for the gallery */
+    padding: 80px 0;
+}
+
+.single-gallery {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.single-gallery:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.single-gallery:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.overlay-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay-content p {
+    font-size: 16px;
+}
+    /* Styling the Contact Section */
+.contact-section {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Light background for the section */
+}
+
+/* Button styling */
+.hero-btn {
+    color: white;
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    background-color: #34495e;
+    transform: translateY(-5px);
+}
+
+/* Contact Info */
+.contact-info__icon {
+    font-size: 35px;
+    color: #2c3e50;
+    margin-right: 15px;
+}
+
+.contact-info h3 {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.contact-info p {
+    color: #7f8c8d;
+}
+
+/* Center text and style the 'Our Contact Details' button */
+.text-center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Adding some space between contact info */
+.contact-info {
+    margin-bottom: 30px;
+}
+
+
+}
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>House Of Chenai</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Start -->
+    <header>
+        <div class="header-area header-sticky">
+            <div class="main-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                            <div class="logo">
+                                <a href="#"><img src="assets/img/logo/logo.png" alt="House Of Chenai"></a>
+                            </div>
+                        </div>
+                        <!-- Main Menu -->
+                        <div class="col-xl-8 col-lg-8 col-md-6 col-sm-6">
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#services">Services</a></li>
+                                        <li><a href="#contact">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- Header Button -->
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                            <div class="header-right-btn f-right d-none d-lg-block">
+                                <a href="#contact" class="header-btn">Visit Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  <section id="home" class="slider-area position-relative">
+        <div class="slider-active">
+            <!-- Single Slider -->
+            <div class="single-slider slider-height d-flex align-items-center" style="background-image:
+            url('assets/img/gallery/Cathie.jpg'); background-size: cover; background-position: center;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="hero-caption">
+                                <h1 data-aos="fade-up" data-aos-delay="400">We Design Clothes That Fit Your Lifestyle</h1>
+                                <p data-aos="fade-up" data-aos-delay="600">At House Of Chenai, we craft garments tailored to your style and designed for comfort. Whether it's for everyday wear, special occasions, or corporate events, we ensure every piece reflects your unique personality.</p>
+                                <p data-aos="fade-up" data-aos-delay="800">Our team of skilled designers and tailors work closely with you to create custom-made clothing that fits perfectly and makes you feel confident. From elegant dresses to sharp suits, we’ve got you covered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="visit-tailor-area fix section-padding40">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-xl-6 col-lg-6">
+                    <div class="tailor-details">
+                        <h2 data-aos="fade-up">About House Of Chenai</h2>
+                        <p class="pera-top" data-aos="fade-up" data-aos-delay="200">We specialize in creating bespoke clothing tailored to your unique style and fit. Our mission is to bring your vision to life through expert craftsmanship and personalized service.</p>
+                        <p class="pera-bottom" data-aos="fade-up" data-aos-delay="400">From custom designs to precise alterations, we pride ourselves on attention to detail and quality.</p>
+                        <a href="#services" class="btn" data-aos="fade-up" data-aos-delay="600">Learn More</a>
+
+                    </div>
+                </div>
+                <!-- Right Content -->
+                <div class="col-xl-6 col-lg-6">
+                    <div class="tailor-offers" data-aos="fade-left" data-aos-delay="400">
+                        <img src="assets/img/gallery/about-img.jpg">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="clients-area section-padding40">
+        <div class="container">
+             <div style="text-align: center;">
+                                <a href="#services" class="btn hero-btn" data-aos="fade-up" data-aos-delay="1000"
+                                   style="color: white; background-color: black; border-color: black;">Our Services</a>
+                            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-offers mb-50" data-aos="fade-up" data-aos-delay="200">
+                        <div class="offers-img">
+                            <img src="assets/img/gallery/offers1.png" alt="Tailoring">
+                        </div>
+                        <div class="offers-cap">
+                            <span>1</span>
+                            <h3>Tailoring</h3>
+                            <p>Expert tailoring for suits, dresses, and casual wear, crafted to fit you perfectly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-offers mb-50" data-aos="fade-up" data-aos-delay="400">
+                        <div class="offers-img">
+                            <img src="assets/img/gallery/Alt.jpg" alt="Alterations">
+                        </div>
+                        <div class="offers-cap">
+                            <span>2</span>
+                            <h3>Alterations</h3>
+                            <p>Perfect adjustments for resizing, hemming, and modifications to ensure your clothing fits beautifully.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-offers mb-50" data-aos="fade-up" data-aos-delay="600">
+                        <div class="offers-img">
+                            <img src="assets/img/gallery/Cathie.jpg" alt="Designing">
+                        </div>
+                        <div class="offers-cap">
+                            <span>3</span>
+                            <h3>Designing</h3>
+                            <p>Custom, one-of-a-kind clothing designs that reflect your unique style.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+<section id="gallery" class="gallery-area section-padding40" style="background-color: #f9f9f9;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
+                <div class="section-tittle text-center mb-80">
+                    <h2 data-aos="fade-up" style="font-weight: 700; color: #2c3e50;">Our Work</h2>
+                    <p data-aos="fade-up" data-aos-delay="200" style="color: #7f8c8d; font-size: 16px;">Explore some of our recent projects and see the quality of our craftsmanship.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Gallery Item 1 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="single-gallery mb-30" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-img">
+                        <img src="assets/img/gallery/Dress.jpg" alt="Gallery Image 1" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Custom Dress</h3>
+                                <p>Elegant and tailored to perfection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery Item 2 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="single-gallery mb-30" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-img">
+                        <img src="assets/img/gallery/Emie.jpg" alt="Gallery Image 2" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Sharp Suit</h3>
+                                <p>Perfect fit for any occasion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Gallery Item 3 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                <div class="single-gallery mb-30" data-aos="fade-up" data-aos-delay="600">
+                    <div class="gallery-img">
+                        <img src="assets/img/gallery/Casual.jpg" alt="Gallery Image 3" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Casual Wear</h3>
+                                <p>Comfortable and stylish.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+   <section id="contact" class="contact-section section-padding40" style="background-color: #f9f9f9;">
+    <div class="container">
+        <div class="text-center mb-5">
+            <a href="#services" class="btn hero-btn" data-aos="fade-up" data-aos-delay="1000"
+               style="color: white; background-color: #2c3e50; border-color: #2c3e50; padding: 15px 30px; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; border-radius: 30px;">Our Contact Details</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 offset-lg-1">
+                <div class="media contact-info mb-4">
+                    <span class="contact-info__icon" style="font-size: 35px; color: #2c3e50; margin-right: 15px;"><i class="ti-home"></i></span>
+                    <div class="media-body">
+                        <h3 style="font-weight: 600; color: #2c3e50;">Chikanga 3, Mutare.</h3>
+                        <p style="color: #7f8c8d;">Zimta, Park 5323</p>
+                    </div>
+                </div>
+                <div class="media contact-info mb-4">
+                    <span class="contact-info__icon" style="font-size: 35px; color: #2c3e50; margin-right: 15px;"><i class="ti-tablet"></i></span>
+                    <div class="media-body">
+                        <h3 style="font-weight: 600; color: #2c3e50;">+263 778 263 299</h3>
+                        <p style="color: #7f8c8d;">Mon to Fri 8am to 5pm</p>
+                    </div>
+                </div>
+                <div class="media contact-info mb-4">
+                    <span class="contact-info__icon" style="font-size: 35px; color: #2c3e50; margin-right: 15px;"><i class="ti-email"></i></span>
+                    <div class="media-body">
+                        <h3 style="font-weight: 600; color: #2c3e50;">cathychitsiku@gmail.com</h3>
+                        <p style="color: #7f8c8d;">Send us your query anytime!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Scroll Up -->
+    <div id="back-top">
+        <a title="Go to Top" href="#"><i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+    <script src="./assets/js/gijgo.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <script src="./assets/js/jquery.barfiller.js"></script>
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
